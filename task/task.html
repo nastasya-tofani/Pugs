@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задача - Треугольник</title>
+    <!-- Добавляем стили для красивого меню -->
+    <style>
+        body { font-family: sans-serif; background-color: #FAFAFA; color: #333; margin: 0; padding: 20px; }
+        .menu { background-color: #FDEEE2; padding: 10px; margin-bottom: 20px; text-align: center; border-radius: 15px; }
+        .menu ul { list-style: none; padding: 0; margin: 0; }
+        .menu li { display: inline; margin: 0 15px; }
+        .menu a { text-decoration: none; color: #333; font-weight: bold; }
+        .menu a.active { color: #d373ff; }
+        .menu a:hover { color: #d373ff; } 
+        .menu a:active { color: rgb(0, 163, 245); }
+    </style>
+</head>
+
+<body background="../images/Bg2.jpg" style="font-family: 'Comic Sans MS';">
+    
+    <!-- Единая навигационная часть -->
+    <!-- ВАЖНО: так как файл task.html лежит в папке task, нам нужно выйти из нее с помощью ../ -->
+<div class="menu">
+        <ul>
+            <li><a href="../index.html">Главная страница</a></li>
+            <li><a href="../about.html">О мопсах</a></li>
+            <li><a href="../gallery.html">Галерея</a></li>
+            <li><a href="../form/form.html">Анкета и заказ</a></li>
+            <li><a href="../Pasport/pasport.html">Паспорт</a></li>
+            <li><a href="task.html" class="active">Задача</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Мопс" target="_blank">Википедия</a></li>
+        </ul>
+    </div>
+
+    <p name="formulation">Определить, существует ли треугольник с заданными длинами сторон и прямоугольный ли он.</p>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <ul>
+            <li>Для поисковика:<input name="q" value="search"></li>
+            <li>Формулировка задачи 
+                <br><textarea cols="60" rows="4" id="task" name="formulation">Дано количество порций разного корма X,Y,Z, мопсу вкусно только когда корм раскладывают в треугольник. Определить, сможет ли хозяин выложить мопсу треугольник из корма.</textarea></li>
+            <li>X: <input id="x" name="x" type="number" step="any" value="3"></li>
+            <li>Y: <input id="y" name="y" type="number" step="any" value="4"></li>
+            <li>Z: <input id="z" name="z" type="number" step="any" value="5"></li>
+            <li>Результат решения задачи: <input id="result" name="result" value="не определен" size="60"></li>
+            <li>действие 1: <input id="calc" type="button" value="Вычислить"></li>
+            <li>действие 2: <input id="send" type="button" value="Отправить"></li>
+        </ul>
+    </form>
+    <script src="task2.js"></script>
+</body>
+</html>
