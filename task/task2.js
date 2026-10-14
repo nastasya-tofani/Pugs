@@ -19,7 +19,7 @@ function calc() {
         let b = sides[1]; // второй катет
         let c = sides[2]; // гипотенуза 
         
-        // a² + b² = c²
+
         if (a * a + b * b === c * c) {
             result = "Треугольник существует; прямоугольный";
         } else {
